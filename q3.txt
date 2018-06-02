@@ -1,0 +1,52 @@
+question 3
+
+class Cop:
+    name='abc'
+    age=27
+    experience=2
+    designation='constable'
+    def __init__(self,name,age,experience,designation):
+        self.name=name
+        self.age=age
+        self.experience=experience
+        self.designation=designation
+    def add_details(self):
+        self.name = input("Enter name : ")
+        self.age = int(input("Enter age : "))
+        self.experinece = int(input("Enter experience : "))
+        self.designation = input("Enter designation : ")
+    def display_details(self):
+        print(self.name,"cop aged",self.age,"is on duty 
+with",self.experience,"years of experience as",self.designation)
+    def update_details(self):
+        self.name = 'Harshit'
+        self.age = 21
+        self.experience = 1
+        self.designation = 'ACP'
+
+class Mission(Cop):
+    def display_mission(self,m):
+        print("The mission is ",m)
+    def assign(self,m):
+        print(self.name,"has been assigned to the mission",m)
+
+m=Mission('Singham',32,7,'DCP')
+m.add_details()
+m.display_details()
+m.update_details()
+m.display_mission('secret')
+m.display_details()
+m.assign('secret')
+
+output
+
+Enter name : Deadshot
+Enter age : 33
+Enter experience : 8
+Enter designation : Sniper Specialist
+Deadshot cop aged 33 is on duty with 7 years of experience as Sniper 
+Specialist
+The mission is  secret
+Harshit cop aged 21 is on duty with 1 years of experience as ACP
+Harshit has been assigned to the mission secret
+

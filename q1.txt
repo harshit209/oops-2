@@ -1,0 +1,19 @@
+question 1
+
+class Animal:
+    def animal_attribute(self,a):
+        print("animals have ",a,"legs.")
+        print("animals are herbivores,carnivores or omnivores.")
+class Tiger(Animal):
+    def tiger_attribute(self):
+        print("Tiger is carnivores.")
+
+t=Tiger()
+t.animal_attribute(4)
+t.tiger_attribute()
+
+output
+
+animals have  4 legs.
+animals are herbivores,carnivores or omnivores.
+Tiger is carnivores.

@@ -1,0 +1,23 @@
+question 4
+
+class Shape():
+    def __init__(self,length,breadth):
+        self.length = length
+        self.breadth = breadth
+    def area(self):
+        print("Area : ",self.length*self.breadth,"sq. units.")
+class Rectangle(Shape):
+    def __init__(self):
+        super(Rectangle,self).__init__()
+class Square(Shape):
+    def __init__(self):
+        super(Square,self).__init__()
+r=Shape(4,5)
+r.area()
+r=Shape(9,9)
+r.area()
+
+output
+
+Area :  20 sq. units.
+Area :  81 sq. units.
